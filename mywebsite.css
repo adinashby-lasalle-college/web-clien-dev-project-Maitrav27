@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap');* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sour Gummy', sans-serif;
+    background-color: #ffffff; 
+    color: #000000;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000000; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #000000, #808080); 
+    color: white;
+}
+
+section.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+section.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+section.hero a.button {
+    padding: 10px 20px;
+    background-color: #000000; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+section.hero a.button:hover {
+    background-color: #404040; 
+}
+
+footer {
+    background-color: #333333; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sour Gummy', sans-serif;
+    background-color: #ffffff; 
+    color: #000000;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000; 
+}
+
+.contact-form p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #666666; 
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #000000; 
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9; 
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sour Gummy', sans-serif;
+    background-color: #ffffff; 
+    color: #000000; 
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000000; 
+    color: white;
+    padding : 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.about-section {
+    background-color: white; 
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-image img {
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    color: #666666;
+}
+
+.about-content a.button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.about-content a.button:hover {
+    background-color: #404040; 
+}
+
+footer {
+    background-color: #333333; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sour Gummy', sans-serif;
+    background-color: #ffffff; 
+    color: #000000;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000000; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.portfolio {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    background-color: white; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex-basis: calc(33.333% - 20px); 
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.portfolio-item p {
+    margin-bottom: 15px;
+    color: #666666;
+}
+
+.portfolio-item a.button {
+    padding: 10px 20px;
+    background-color: #000000; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.portfolio-item a.button:hover {
+    background-color: #404040;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .portfolio-item {
+        flex-basis: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-item {
+        flex-basis: 100%;
+    }
+}
+
+footer {
+    background-color: #333333; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sour Gummy', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.services {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: white; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    flex-basis: calc(50% - 20px);
+    text-align: center;
+}
+
+.service-item i {
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.service-item p {
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 900px) {
+    .service-item {
+        flex-basis: 100%; 
+    }
+}
+
+footer {
+    background-color: #333333; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
