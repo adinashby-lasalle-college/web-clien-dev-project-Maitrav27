@@ -88,6 +88,135 @@ footer p {
     font-size: 0.9rem;
 }
 
+/* Skills Section */
+.skills-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-content {
+    max-width: 600px;
+}
+
+.skills-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.skills-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-content ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #666666;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills-content ul li::before {
+    content: '\2022';
+    color: #000000; 
+    font-weight: bold;
+}
+
+.skills-container {
+    display: flex; /* Enables a flex layout */
+    align-items: center; /* Vertically aligns text and image */
+    justify-content: space-between; /* Spreads content evenly */
+    gap: 20px; /* Adds space between text and image */
+}
+
+
+.skills-image img {
+    width: 150px; /* Adjust size */
+    height: 150px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Properly fit image within circle */
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.reviews {
+    background-color: #f9f9f9; 
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    flex-basis: calc(33.333% - 20px); /* Adjust size for responsiveness */
+}
+
+.review-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-content p {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.review-content h3 {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .review-item {
+        flex-basis: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .skills-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-image {
+        margin-top: 20px;
+    }
+}
+
 
 * {
     margin: 0;
@@ -286,7 +415,7 @@ footer p {
     font-size: 0.9rem;
 }
 
-* {
+* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -343,10 +472,11 @@ nav ul li a:hover {
 }
 
 .portfolio-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 20px; /* Space between grid items */
+    justify-items: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
 }
 
 .portfolio-item {
@@ -355,11 +485,17 @@ nav ul li a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    flex-basis: calc(33.333% - 20px); 
+    width: 100%; /* Makes sure items fit the grid space */
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px); /* Adds hover animation */
 }
 
 .portfolio-item img {
     max-width: 100%;
+    height: auto; /* Ensures proportional scaling */
     border-radius: 8px;
     margin-bottom: 15px;
 }
@@ -376,29 +512,31 @@ nav ul li a:hover {
 }
 
 .portfolio-item a.button {
+    display: inline-block;
     padding: 10px 20px;
     background-color: #000000; 
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .portfolio-item a.button:hover {
     background-color: #404040;
 }
 
+
 /* Responsive Design */
 @media (max-width: 900px) {
-    .portfolio-item {
-        flex-basis: calc(50% - 20px); 
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr); /* Still 2x2 on smaller screens */
     }
 }
 
 @media (max-width: 600px) {
-    .portfolio-item {
-        flex-basis: 100%;
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* Switch to 1 column for very small screens */
     }
 }
 
@@ -414,110 +552,35 @@ footer p {
     font-size: 0.9rem;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Sour Gummy', sans-serif;
-    background-color: #ffffff;
-    color: #000000;
-    line-height: 1.6;
-}
-
-header {
-    background-color: #000000;
-    color: white;
-    padding: 20px;
+/* Social Links Section */
+.social-links {
     text-align: center;
+    margin-top: 40px;
 }
 
-nav {
-    margin-top: 10px;
+/* Social Link Items */
+.social-links a {
+    display: inline-block;
+    margin: 0 15px; /* Space between icons */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
 }
 
-nav ul {
-    list-style-type: none;
+.social-links a:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+/* Social Media Icons */
+.social-links img {
+    width: 40px; /* Set the size of the social media icons */
+    height: 40px;
+    border-radius: 50%; /* Round the icons */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+    transition: filter 0.3s ease; /* Smooth transition for filter effect */
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
+/* Hover Effect */
+.social-links img:hover {
+    filter: brightness(1.2); /* Make the icon brighter when hovered */
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.services {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-    text-align: center;
-}
-
-.services h2 {
-    font-size: 2.5rem;
-    color: #000000;
-    margin-bottom: 40px;
-}
-
-.services-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.service-item {
-    background-color: white; 
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px 20px;
-    flex-basis: calc(50% - 20px);
-    text-align: center;
-}
-
-.service-item i {
-    font-size: 3rem;
-    color: #000000;
-    margin-bottom: 20px;
-}
-
-.service-item h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #000000;
-}
-
-.service-item p {
-    color: #666666;
-    margin-bottom: 15px;
-}
-
-@media (max-width: 900px) {
-    .service-item {
-        flex-basis: 100%; 
-    }
-}
-
-footer {
-    background-color: #333333; 
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 30px;
-}
-
-footer p {
-    font-size: 0.9rem;
-}
 
